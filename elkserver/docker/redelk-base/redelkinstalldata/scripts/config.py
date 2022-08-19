@@ -63,6 +63,10 @@ if 'notifications' in data:
 # -- Alarms
 # pylint: disable=invalid-name
 alarms = {
+        'alarm_dummy': {
+        'enabled': False,
+        'interval': 300
+    },
     'alarm_filehash': {
         'enabled': False,
         'interval': 300,
@@ -79,10 +83,10 @@ alarms = {
         'enabled': False,
         'interval': 320
     },
-    'alarm_dummy': {
+    'alarm_backendalarm': {
         'enabled': False,
-        'interval': 300
-    }
+        'interval': 320
+    }    
 }
 if 'alarms' in data:
     for a in data['alarms']:
